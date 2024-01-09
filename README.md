@@ -4,7 +4,7 @@
 Download [com.apple.MobileAsset.plist](https://github.com/Mikasa-san/Block-OTA/raw/main/com.apple.MobileAsset.plist) & copy it to /var/mobile/Managed Preferences/mobile/ then just reboot or reboot userspace & it can be added to backup folders in ManagedPreferencesDomain/mobile/
 
 ## Method 2
-Go to /var/db/com.apple.xpc.launchd/ and edit disabled.plist and add com.apple.softwareupdateservicesd as key with type boolean and set value true & it can be added to backup in /DatabaseDomain/com.apple.xpc.launchd/disabled.plist
+Go to /var/db/com.apple.xpc.launchd/ and edit disabled.plist and add ```com.apple.softwareupdateservicesd``` as key with type boolean and set value true & it can be added to backup in /DatabaseDomain/com.apple.xpc.launchd/disabled.plist
 
 ## Method 3
 Copy the following command to the clipboard, then use Filza to find /usr/bin/vm_stat and click Run, then paste the following command and press Enter to run
